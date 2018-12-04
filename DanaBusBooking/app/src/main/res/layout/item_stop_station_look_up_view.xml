@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="@color/white"
+
+    android:scrollbars="none">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/centerLayout"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_below="@+id/coverBackgroundImageView"
+
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+
+            android:background="@color/colorBackgroundUserProfile">
+
+            <TextView
+                android:id="@+id/maTramDungTextView"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_centerHorizontal="true"
+
+                android:textAlignment="center"
+
+                android:text="Trạm 12"
+
+                android:textColor="#fff"
+
+                android:textSize="21sp"
+
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:layout_below="@+id/centerLayout"
+
+            android:background="@color/white"
+
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:orientation="horizontal"
+
+                android:background="@drawable/border_shadow_5"
+
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="20dp"
+                android:paddingBottom="20dp">
+
+                <ImageView
+                    android:layout_width="@dimen/mapImageViewSize"
+                    android:layout_height="@dimen/mapImageViewSize"
+
+                    android:src="@drawable/booked"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:text="Tên trạm:"
+
+                    android:layout_marginLeft="10dp"
+
+                    android:textColor="@color/colorUserInformationTextView"
+
+                    android:textSize="@dimen/informationDetailShapeTextSize" />
+
+                <TextView
+                    android:id="@+id/tenTramDungTextView"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginLeft="10dp"
+
+                    android:text="Trạm bãi biển Đông"
+
+                    android:textColor="@color/colorUserInformationTextView"
+
+                    android:textSize="@dimen/informationDetailnforTextSize" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:orientation="horizontal"
+
+                android:background="@drawable/border_shadow_5"
+
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="20dp"
+                android:paddingBottom="20dp">
+
+                <ImageView
+                    android:layout_width="@dimen/mapImageViewSize"
+                    android:layout_height="@dimen/mapImageViewSize"
+
+                    android:src="@drawable/booked"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:text="Địa chỉ:"
+
+                    android:layout_marginLeft="10dp"
+
+                    android:textColor="@color/colorUserInformationTextView"
+
+                    android:textSize="@dimen/informationDetailShapeTextSize" />
+
+                <TextView
+                    android:id="@+id/diaChiTextView"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginLeft="10dp"
+
+                    android:text="12-Tôn Đức Thắng"
+
+                    android:textColor="@color/colorUserInformationTextView"
+
+                    android:textSize="@dimen/informationDetailnforTextSize" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</ScrollView>

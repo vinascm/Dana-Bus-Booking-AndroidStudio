@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:orientation="horizontal"
+
+    android:gravity="center"
+
+    android:padding="15dp">
+
+    <Button
+        android:id="@+id/maXeBuytButton"
+
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+
+        android:background="@drawable/button_background_rounded_view_bus_look_up"
+
+        android:padding="15dp"
+
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+
+        android:text="Xe buýt 2"
+
+        android:textColor="@color/white"
+
+        android:textSize="15sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginLeft="10dp"
+
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/thongTinSoHieuXeTextView"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:text="Số hiệu: K-32"
+
+            android:textColor="@color/colorHomeTextView"
+
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/thongTinBienSoXeTextView"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:text="Biển số xe: BA.32.232"
+
+            android:textColor="@color/colorHomeTextView"
+
+            android:textSize="15sp" />
+
+    </LinearLayout>
+
+</LinearLayout>

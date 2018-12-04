@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:scrollbars="none"
+
+    android:background="@color/colorBackgroundUserProfile">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:orientation="vertical"
+
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp">
+
+        <!-- Camera buttong for getting a picture avatar-->
+        <Button
+            android:id="@+id/cameraGettingAvatarButton"
+
+            android:layout_width="@dimen/cameraGettingAvatarButtonSize"
+            android:layout_height="@dimen/cameraGettingAvatarButtonSize"
+
+            android:layout_gravity="right"
+
+            android:layout_marginRight="@dimen/cameraGettingAvatarButtonMargin"
+            android:layout_marginTop="@dimen/cameraGettingAvatarButtonMargin"
+
+            android:background="@drawable/camera_background"
+
+            android:onClick="selectImage" />
+
+        <!-- Image illustration-->
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/avatarIllustrationImageView"
+
+            android:layout_width="@dimen/avatarIllustrationImageViewSize"
+            android:layout_height="@dimen/avatarIllustrationImageViewSize"
+
+            android:layout_gravity="center"
+
+            android:src="@drawable/avatar" />
+
+        <!-- Ten Label -->
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+
+            android:textColorHint="@color/contentTextViewColor">
+
+            <EditText
+                android:id="@+id/tenEditText"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:backgroundTint="@color/contentTextViewColor"
+
+                android:hint="Họ tên"
+
+                android:inputType="textCapWords"
+
+                android:textColor="@color/contentTextViewColor"
+
+                android:textCursorDrawable="@drawable/text_cursor_drawable" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <!-- Tuoi Label -->
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+
+            android:textColorHint="@color/contentTextViewColor">
+
+            <EditText
+                android:id="@+id/tuoiEditText"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:backgroundTint="@color/contentTextViewColor"
+
+                android:hint="Tuổi"
+
+                android:inputType="numberSigned"
+
+                android:textColor="@color/contentTextViewColor"
+
+                android:textCursorDrawable="@drawable/text_cursor_drawable" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <!-- Gioi tinh Label -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="3dp"
+
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_marginRight="20dp"
+
+                android:paddingTop="4dp"
+
+                android:text="Giới tính"
+
+                android:textColor="@color/white"
+
+                android:textSize="18sp" />
+
+            <RadioGroup
+                android:id="@+id/gioiTinhRadioButtonGroup"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/namRadioButton"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:buttonTint="@color/white"
+                    android:text="Nam"
+
+                    android:textColor="@color/white" />
+
+                <RadioButton
+                    android:id="@+id/nuRadioButton"
+
+                    android:layout_width="wrap_content"
+
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+
+                    android:buttonTint="@color/white"
+
+                    android:text="Nữ"
+
+                    android:textColor="@color/white" />
+
+                <RadioButton
+                    android:id="@+id/kxdRadioButton"
+
+                    android:layout_width="wrap_content"
+
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+
+                    android:buttonTint="@color/white"
+
+                    android:text="KXD"
+
+                    android:textColor="@color/white" />
+
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <!-- Dia chi Label -->
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+
+            android:textColorHint="@color/contentTextViewColor">
+
+            <EditText
+                android:id="@+id/diaChiEditText"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:backgroundTint="@color/contentTextViewColor"
+
+                android:hint="Địa chỉ"
+
+                android:inputType="textCapWords"
+
+                android:textColor="@color/contentTextViewColor"
+
+                android:textCursorDrawable="@drawable/text_cursor_drawable" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <!-- Nghe nghiep Label -->
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+
+            android:textColorHint="@color/contentTextViewColor">
+
+            <EditText
+                android:id="@+id/ngheNghiepEditText"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:backgroundTint="@color/contentTextViewColor"
+
+                android:hint="Nghề nghiệp"
+
+                android:inputType="textCapWords"
+
+                android:textColor="@color/contentTextViewColor"
+
+                android:textCursorDrawable="@drawable/text_cursor_drawable" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <!-- Password Label -->
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginBottom="8dp"
+
+            android:layout_marginTop="8dp"
+
+            android:textColorHint="@color/contentTextViewColor">
+
+            <EditText
+                android:id="@+id/passwordEditText"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:backgroundTint="@color/contentTextViewColor"
+
+                android:hint="Mật khẩu mới"
+
+                android:inputType="textPassword"
+
+                android:textColor="@color/contentTextViewColor"
+
+                android:textCursorDrawable="@drawable/text_cursor_drawable" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/updateUserInformationButton"
+
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginBottom="24dp"
+            android:layout_marginTop="24dp"
+
+            android:background="@drawable/button_background_rounded_6"
+
+            android:padding="12dp"
+
+            android:text="Cập nhật"
+
+            android:textColor="@color/contentTextViewColor" />
+
+    </LinearLayout>
+
+</ScrollView>

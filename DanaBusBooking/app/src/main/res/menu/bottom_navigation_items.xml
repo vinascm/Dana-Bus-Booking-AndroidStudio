@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/mapMenuAction"
+        android:icon="@drawable/map"
+        android:title="Tra cứu"/>
+
+    <item
+        android:id="@+id/searchMenuAction"
+        android:icon="@drawable/search"
+        android:title="Tìm kiếm"/>
+
+    <item
+        android:id="@+id/historyMenuAction"
+        android:icon="@drawable/history"
+        android:title="Giao dịch"/>
+
+    <item
+        android:id="@+id/moreMenuAction"
+        android:icon="@drawable/more"
+        android:title="Cá nhân"/>
+
+</menu>

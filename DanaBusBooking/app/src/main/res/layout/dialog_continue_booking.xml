@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:id="@+id/choiceConversationLayout"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="@color/colorBackgroundChoiceLayout"
+
+    android:gravity="center_horizontal"
+
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:background="@color/colorBackgroundUserProfile"
+
+        android:orientation="vertical"
+
+        android:padding="10dp">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="55dp"
+
+            android:layout_gravity="center"
+
+            android:src="@drawable/logo" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:text="Chúc mừng!"
+
+            android:textAlignment="center"
+
+            android:textColor="@color/white"
+
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/notificationTextView"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="10dp"
+
+            android:text="Bạn đã đặt được vé thành công. Bạn có thể tiếp tục đặt vé cho những tuyến còn lại hoặc trờ về mục giao dịch quản lý vé!"
+
+            android:textAlignment="center"
+
+            android:textColor="@color/white"
+
+            android:textSize="13sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:background="@color/colorBackgroundSeconđialog"
+
+        android:gravity="center_horizontal"
+
+        android:orientation="horizontal"
+
+        android:padding="20dp">
+
+        <!-- Me choice Button -->
+        <Button
+            android:id="@+id/continueBookingButton"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:background="@drawable/button_background_rounded_5"
+
+            android:text="Đặt vé khác"
+
+            android:textSize="10sp"
+
+            android:textColor="@color/colorButtonText" />
+
+        <!-- Phone Choice Button -->
+        <Button
+            android:id="@+id/returnHistoryPageButton"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginLeft="@dimen/roundButtonMarginLeft"
+
+            android:background="@drawable/button_background_rounded_5"
+
+            android:textSize="10sp"
+
+            android:text="Xem giao dịch"
+
+            android:textColor="@color/colorButtonText" />
+
+    </LinearLayout>
+
+</LinearLayout>

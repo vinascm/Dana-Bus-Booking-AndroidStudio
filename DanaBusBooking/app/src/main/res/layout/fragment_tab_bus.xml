@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="@color/colorPrimary">
+
+    <!-- If we don't have any available source, shut this down -->
+    <LinearLayout
+        android:id="@+id/topLayout"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:gravity="center"
+
+        android:orientation="horizontal"
+
+        android:padding="10dp">
+
+        <!-- Search Image View-->
+        <ImageView
+            android:id="@+id/searchImageView"
+
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+
+            android:layout_centerInParent="true"
+
+            android:src="@drawable/lookup" />
+
+        <EditText
+            android:id="@+id/busLookUpEditText"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginLeft="@dimen/paddingMapText"
+
+            android:layout_marginRight="@dimen/paddingMapText"
+
+            android:hint="Tra cứu xe..."
+
+            android:backgroundTint="@color/colorThemeBackgroundSplashScreen"
+
+            android:textColor="@color/mapLookUpTextColorTextView"
+
+            android:textColorHint="@color/mapLookUpText"
+
+            android:textCursorDrawable="@drawable/text_cursor_drawable_map"
+
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/busLookUpListView"
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:background="@drawable/border_shadow_3"
+
+        android:layout_below="@id/topLayout"
+
+        android:scrollbars="none" />
+
+</RelativeLayout>

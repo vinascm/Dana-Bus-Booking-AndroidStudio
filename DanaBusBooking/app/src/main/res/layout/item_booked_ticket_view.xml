@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:gravity="center"
+
+        android:orientation="horizontal"
+
+        android:padding="15dp">
+
+        <Button
+            android:id="@+id/trangThaiVeButton"
+
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+
+            android:background="@drawable/button_background_rounded_view_ticket_booked"
+
+            android:focusable="false"
+
+            android:focusableInTouchMode="false"
+            android:padding="15dp"
+
+            android:text="Đã đặt"
+
+            android:textColor="@color/white"
+
+            android:textSize="15sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginLeft="10dp"
+
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tenTuyenTextView"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:text="Tên tuyến: Đai Hàn - Cao Lãnh"
+
+                android:textColor="@color/colorHomeTextView"
+
+                android:textSize="@dimen/itemLetterTextSizeTicket" />
+
+            <TextView
+                android:id="@+id/thongTinXeTextView"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:text="Xe 32 - N3kK - BA.32.232"
+
+                android:textColor="@color/colorHomeTextView"
+
+                android:textSize="@dimen/itemLetterTextSizeTicket" />
+
+            <TextView
+                android:id="@+id/thongTinNgayTextView"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:text="Ngày đặt: 20.10.20 - 05.30"
+
+                android:textColor="@color/colorHomeTextView"
+
+                android:textSize="@dimen/itemLetterTextSizeTicket" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginBottom="20dp">
+
+        <Button
+            android:id="@+id/viewDetailButton"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:focusable="false"
+
+            android:layout_alignParentRight="true"
+
+            android:layout_marginRight="20dp"
+
+            android:background="@drawable/button_background_rounded_4"
+
+            android:text="Chi tiết"
+
+            android:textColor="@color/white"
+
+            android:textSize="@dimen/buttonRoundedViewTextSize" />
+
+    </RelativeLayout>
+
+</LinearLayout>

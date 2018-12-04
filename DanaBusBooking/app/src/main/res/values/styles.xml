@@ -1,0 +1,61 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <!-- Animation dialog theme style 1: black texts -->
+    <style name="DialogAnimationTheme1" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="android:windowAnimationStyle">@style/ShowUpDialogAnimation1</item>
+    </style>
+
+    <style name="ShowUpDialogAnimation1">
+        <item name="android:windowEnterAnimation">@anim/dialog_show_up</item>
+        <item name="android:windowExitAnimation">@anim/dialog_hide_out</item>
+    </style>
+
+    <!-- Animation dialog theme style 2: white texts -->
+    <style name="DialogAnimationTheme2" parent="Theme.AppCompat.Dialog.Alert">
+        <item name="android:windowAnimationStyle">@style/ShowUpDialogAnimation2</item>
+    </style>
+
+    <style name="ShowUpDialogAnimation2">
+        <item name="android:windowEnterAnimation">@anim/dialog_show_up</item>
+        <item name="android:windowExitAnimation">@anim/dialog_hide_out</item>
+    </style>
+
+    <!-- Rating bar theme -->
+    <style name="RatingBar" parent="Theme.AppCompat">
+        <item name="colorControlNormal">@color/colorStoriesTitles</item>
+        <item name="colorControlActivated">@color/colorStoriesTitles</item>
+    </style>
+
+    <style name="PerfectinRateBar" parent="Theme.AppCompat">
+        <item name="colorControlNormal">@color/colorPerfectionRatingBar</item>
+        <item name="colorControlActivated">@color/colorPerfectionRatingBar</item>
+    </style>
+
+    <style name="ProgressBarStyle">
+        <item name="colorAccent">@color/colorMessageDisplayTextView</item>
+    </style>
+
+    <style name="ProgressBarStyle2">
+        <item name="colorAccent">@color/colorMainBackgroundThirdFunction</item>
+    </style>
+
+    <style name="AppTheme.Dark.Dialog" parent="Theme.AppCompat.Dialog">
+        <item name="colorAccent">@color/white</item>
+        <item name="android:textColorPrimary">@color/white</item>
+        <item name="android:background">@color/mainColorStatusBarApp</item>
+    </style>
+
+    <style name="loadingFinding" parent="Theme.AppCompat.Dialog">
+        <item name="colorAccent">@color/mainColorStatusBarApp</item>
+        <item name="android:textColorPrimary">@color/mainColorStatusBarApp</item>
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+
+</resources>

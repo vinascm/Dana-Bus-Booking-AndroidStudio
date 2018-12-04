@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="AppTheme.SplashTheme">
+        <item name="android:statusBarColor">@color/colorThemeBackgroundSplashScreen</item>
+        <item name="android:navigationBarColor">@color/colorThemeBackgroundSplashScreen</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+    </style>
+
+    <style name="AppTheme.LoginTheme">
+        <item name="android:statusBarColor">@color/mainColorStatusBarApp</item>
+        <item name="android:navigationBarColor">@color/mainColorStatusBarApp</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+    </style>
+
+    <style name="AppTheme.HomeTheme">
+        <item name="android:statusBarColor">@color/colorPrimaryDark</item>
+        <item name="android:navigationBarColor">@color/colorPrimaryDark</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+    </style>
+
+    <style name="AppTheme.FirstTheme">
+        <item name="android:statusBarColor">@color/colorMessageLayoutStatusBar</item>
+        <item name="android:navigationBarColor">@color/colorMessageLayoutStatusBar</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+    </style>
+
+    <style name="AppTheme.UserTheme">
+        <item name="android:statusBarColor">@color/colorStatusBarUserInformation</item>
+        <item name="android:navigationBarColor">@color/colorStatusBarUserInformation</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+    </style>
+
+    <style name="AppTheme.DeepTheme">
+        <item name="android:statusBarColor">@color/colorStatusBarThirdFunction</item>
+        <item name="android:navigationBarColor">@color/colorStatusBarThirdFunction</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+    </style>
+
+
+</resources>

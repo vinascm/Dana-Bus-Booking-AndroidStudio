@@ -1,0 +1,542 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="@color/white"
+
+    android:scrollbars="none">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/coverBackgroundImageView"
+
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+
+            android:background="@color/colorBackgroundUserHeader"/>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/avatarImageView"
+
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+
+            android:layout_below="@+id/coverBackgroundImageView"
+
+            android:layout_centerHorizontal="true"
+
+            android:layout_marginTop="-75dp"
+
+            android:elevation="5dp"
+
+            android:scaleType="centerCrop"
+
+            android:src="@drawable/avatar" />
+
+        <RelativeLayout
+            android:id="@+id/centerLayout"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_below="@+id/coverBackgroundImageView"
+
+            android:background="@color/colorBackgroundUserProfile"
+
+            android:paddingBottom="24dp">
+
+            <Button
+                android:id="@+id/editUserInformationButton"
+
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+
+                android:layout_alignParentRight="true"
+
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="30dp"
+
+                android:clickable="true"
+
+                android:background="@drawable/edit_background" />
+
+            <TextView
+                android:id="@+id/tenTextView"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_centerHorizontal="true"
+
+                android:layout_marginTop="80dp"
+
+                android:textAlignment="center"
+
+                android:text="Tweak Kit"
+
+                android:textColor="#fff"
+
+                android:textSize="20sp"
+
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/emailTextView"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_below="@+id/tenTextView"
+
+                android:layout_centerHorizontal="true"
+
+                android:layout_marginTop="10dp"
+
+                android:text="(tweakkit200497@gmail.com)"
+
+                android:textAlignment="center"
+
+                android:textColor="#fff"
+
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_below="@id/emailTextView"
+
+                android:layout_marginTop="@dimen/nameTextViewMarginTop"
+
+                android:gravity="center">
+
+                <!-- Address Image-->
+                <ImageView
+                    android:layout_width="@dimen/imageAddressViewSize"
+                    android:layout_height="@dimen/imageAddressViewSize"
+
+                    android:layout_marginRight="@dimen/imageAddressViewMarginRight"
+
+                    android:layout_toLeftOf="@id/diaChiTextView"
+
+                    android:background="@drawable/address" />-->
+
+                <!-- Address -->
+                <TextView
+                    android:id="@+id/diaChiTextView"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_alignLeft="@+id/avatarImageView"
+
+                    android:layout_alignStart="@+id/avatarImageView"
+
+                    android:layout_alignTop="@+id/imageView"
+
+                    android:layout_centerHorizontal="true"
+
+                    android:text="Quảng Nam Tam kì"
+
+                    android:textColor="@color/colorTextUserInformation"
+
+                    android:textSize="@dimen/textUserInformationAddressSize" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:layout_below="@+id/centerLayout"
+
+            android:background="@color/white"
+
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:orientation="horizontal"
+
+                android:background="@drawable/border_shadow_5"
+
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="20dp"
+                android:paddingBottom="20dp">
+
+                <ImageView
+                    android:layout_width="@dimen/mapImageViewSize"
+                    android:layout_height="@dimen/mapImageViewSize"
+
+                    android:src="@drawable/sex"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:text="Giới tính:"
+
+                    android:layout_marginLeft="10dp"
+
+                    android:textColor="@color/colorUserInformationTextView"
+
+                    android:textSize="@dimen/informationDetailShapeTextSize" />
+
+                <TextView
+                    android:id="@+id/gioiTinhTextView"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginLeft="10dp"
+
+                    android:text="Nam"
+
+                    android:textColor="@color/colorUserInformationTextView"
+
+                    android:textSize="@dimen/informationDetailnforTextSize" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:orientation="horizontal"
+
+                android:background="@drawable/border_shadow_5"
+
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="20dp"
+                android:paddingBottom="20dp">
+
+                <ImageView
+                    android:layout_width="@dimen/mapImageViewSize"
+                    android:layout_height="@dimen/mapImageViewSize"
+
+                    android:src="@drawable/age"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:text="Tuổi:"
+
+                    android:layout_marginLeft="10dp"
+
+                    android:textColor="@color/colorUserInformationTextView"
+
+                    android:textSize="@dimen/informationDetailShapeTextSize" />
+
+                <TextView
+                    android:id="@+id/tuoiTextView"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginLeft="10dp"
+
+                    android:text="12"
+
+                    android:textColor="@color/colorUserInformationTextView"
+
+                    android:textSize="@dimen/informationDetailnforTextSize" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:orientation="horizontal"
+
+                android:background="@drawable/border_shadow_5"
+
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="20dp"
+                android:paddingBottom="20dp">
+
+                <ImageView
+                    android:layout_width="@dimen/mapImageViewSize"
+                    android:layout_height="@dimen/mapImageViewSize"
+
+                    android:src="@drawable/job"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:text="Nghề nghiệp:"
+
+                    android:layout_marginLeft="10dp"
+
+                    android:textColor="@color/colorUserInformationTextView"
+
+                    android:textSize="@dimen/informationDetailShapeTextSize" />
+
+                <TextView
+                    android:id="@+id/ngheNghiepTextView"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginLeft="10dp"
+
+                    android:text="Học sinh"
+
+                    android:textColor="@color/colorUserInformationTextView"
+
+                    android:textSize="@dimen/informationDetailnforTextSize" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:orientation="horizontal"
+
+                android:background="@drawable/border_shadow_5"
+
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="20dp"
+                android:paddingBottom="20dp">
+
+                <ImageView
+                    android:layout_width="@dimen/mapImageViewSize"
+                    android:layout_height="@dimen/mapImageViewSize"
+
+                    android:src="@drawable/booked"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:text="Số vé đã đặt:"
+
+                    android:layout_marginLeft="10dp"
+
+                    android:textColor="@color/colorUserInformationTextView"
+
+                    android:textSize="@dimen/informationDetailShapeTextSize" />
+
+                <TextView
+                    android:id="@+id/soVeDaDatTextView"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginLeft="10dp"
+
+                    android:text="10"
+
+                    android:textColor="@color/colorUserInformationTextView"
+
+                    android:textSize="@dimen/informationDetailnforTextSize" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:orientation="horizontal"
+
+                android:background="@drawable/border_shadow_5"
+
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="20dp"
+                android:paddingBottom="20dp">
+
+                <ImageView
+                    android:layout_width="@dimen/mapImageViewSize"
+                    android:layout_height="@dimen/mapImageViewSize"
+
+                    android:src="@drawable/canceled"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:text="Số vé đã hủy:"
+
+                    android:layout_marginLeft="10dp"
+
+                    android:textColor="@color/colorUserInformationTextView"
+
+                    android:textSize="@dimen/informationDetailShapeTextSize" />
+
+                <TextView
+                    android:id="@+id/soVeDaHuyTextView"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginLeft="10dp"
+
+                    android:text="5"
+
+                    android:textColor="@color/colorUserInformationTextView"
+
+                    android:textSize="@dimen/informationDetailnforTextSize" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:orientation="horizontal"
+
+                android:background="@drawable/border_shadow_5"
+
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="20dp"
+                android:paddingBottom="20dp">
+
+                <ImageView
+                    android:layout_width="@dimen/mapImageViewSize"
+                    android:layout_height="@dimen/mapImageViewSize"
+
+                    android:src="@drawable/level"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:text="Hạng:"
+
+                    android:layout_marginLeft="10dp"
+
+                    android:textColor="@color/colorUserInformationTextView"
+
+                    android:textSize="@dimen/informationDetailShapeTextSize" />
+
+                <TextView
+                    android:id="@+id/cheDoUuDaiTextView"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginLeft="10dp"
+
+                    android:text="Bình thường"
+
+                    android:textColor="@color/colorUserInformationTextView"
+
+                    android:textSize="@dimen/informationDetailnforTextSize" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:orientation="horizontal"
+
+                android:background="@drawable/border_shadow_5"
+
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="20dp"
+                android:paddingBottom="20dp">
+
+                <ImageView
+                    android:layout_width="@dimen/mapImageViewSize"
+                    android:layout_height="@dimen/mapImageViewSize"
+
+                    android:src="@drawable/discount"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:text="Ưu đãi giảm giá:"
+
+                    android:layout_marginLeft="10dp"
+
+                    android:textColor="@color/colorUserInformationTextView"
+
+                    android:textSize="@dimen/informationDetailShapeTextSize" />
+
+                <TextView
+                    android:id="@+id/tiLeGiamGiaTextView"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginLeft="10dp"
+
+                    android:text="10%"
+
+                    android:textColor="@color/colorUserInformationTextView"
+
+                    android:textSize="@dimen/informationDetailnforTextSize" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:orientation="horizontal"
+
+                android:background="@drawable/border_shadow_5"
+
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="20dp"
+                android:paddingBottom="20dp">
+
+                <android.support.v7.widget.AppCompatButton
+                    android:id="@+id/logOutButton"
+
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+
+                    android:background="@drawable/button_background_rounded_5"
+
+                    android:padding="12dp"
+
+                    android:text="Đăng xuất"
+
+                    android:textColor="@color/contentTextViewColor" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="24dp"
+                android:layout_marginBottom="24dp"
+
+                android:gravity="center"
+
+                android:text="v1.1"
+
+                android:textColor="@color/colorUserInformationTextView"
+
+                android:textSize="14dip" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</ScrollView>

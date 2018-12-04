@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="@color/white"
+
+    android:scrollbars="none">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/centerLayout"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_below="@+id/coverBackgroundImageView"
+
+            android:background="@color/colorBackgroundUserProfile"
+            android:paddingBottom="30dp"
+
+            android:paddingTop="30dp">
+
+            <TextView
+                android:id="@+id/maXeBuytTextView"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_centerHorizontal="true"
+
+                android:text="Xe buýt 1"
+
+                android:textAlignment="center"
+
+                android:textColor="#fff"
+
+                android:textSize="21sp"
+
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/soHieuXeTextView"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_below="@+id/maXeBuytTextView"
+
+                android:layout_centerHorizontal="true"
+
+                android:layout_marginTop="10dp"
+
+                android:text="Số hiệu: 120;3"
+
+                android:textAlignment="center"
+
+                android:textColor="#fff"
+
+                android:textSize="18sp" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/informationLayout"
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:layout_below="@+id/centerLayout"
+
+            android:background="@color/white"
+
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:background="@drawable/border_shadow_5"
+
+                android:orientation="horizontal"
+
+                android:paddingBottom="20dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="20dp">
+
+                <ImageView
+                    android:layout_width="@dimen/mapImageViewSize"
+                    android:layout_height="@dimen/mapImageViewSize"
+
+                    android:src="@drawable/booked" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginLeft="10dp"
+
+                    android:text="Biến số xe:"
+
+                    android:textColor="@color/colorUserInformationTextView"
+
+                    android:textSize="@dimen/informationDetailShapeTextSize" />
+
+                <TextView
+                    android:id="@+id/bienSoXeTextView"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginLeft="10dp"
+
+                    android:text="KD-323.32"
+
+                    android:textColor="@color/colorUserInformationTextView"
+
+                    android:textSize="@dimen/informationDetailnforTextSize" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:background="@drawable/border_shadow_5"
+
+                android:orientation="horizontal"
+
+                android:paddingBottom="20dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="20dp">
+
+                <ImageView
+                    android:layout_width="@dimen/mapImageViewSize"
+                    android:layout_height="@dimen/mapImageViewSize"
+
+                    android:src="@drawable/booked" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginLeft="10dp"
+
+                    android:text="Số ghế trống:"
+
+                    android:textColor="@color/colorUserInformationTextView"
+
+                    android:textSize="@dimen/informationDetailShapeTextSize" />
+
+                <TextView
+                    android:id="@+id/soGheTrongTextView"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginLeft="10dp"
+
+                    android:text="10"
+
+                    android:textColor="@color/colorUserInformationTextView"
+
+                    android:textSize="@dimen/informationDetailnforTextSize" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:background="@drawable/border_shadow_5"
+
+                android:orientation="horizontal"
+
+                android:paddingBottom="20dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="20dp">
+
+                <TextView
+                    android:id="@+id/kcvlTextView"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginLeft="10dp"
+
+                    android:text="DANH SÁCH GHẾ"
+
+                    android:textAlignment="center"
+
+                    android:textColor="@color/colorUserInformationTextView"
+
+                    android:textSize="@dimen/informationDetailShapeTextSize" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp"
+
+            android:scrollbars="none"
+
+            android:layout_below="@+id/informationLayout">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="3000dp"
+                    android:layout_height="match_parent"
+
+                    android:orientation="horizontal">
+
+                    <GridView
+                        android:id="@+id/gheNgoiGridView"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+
+                        android:columnWidth="100dp"
+
+                        android:gravity="center"
+
+                        android:horizontalSpacing="1dp"
+
+                        android:scrollbarAlwaysDrawHorizontalTrack="true"
+                        android:scrollbarAlwaysDrawVerticalTrack="true"
+
+                        android:scrollbars="none"
+
+                        android:stretchMode="none">
+
+                    </GridView>
+
+                </LinearLayout>
+
+            </FrameLayout>
+
+        </HorizontalScrollView>
+
+    </RelativeLayout>
+
+</ScrollView>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:orientation="horizontal"
+
+    android:gravity="center"
+
+    android:padding="15dp">
+
+    <Button
+        android:id="@+id/maTuyenDuongButton"
+
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+
+        android:background="@drawable/button_background_rounded_view_route_look_up"
+
+        android:padding="15dp"
+
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+
+        android:text="Tuyến 2"
+
+        android:textColor="@color/white"
+
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/tenTuyenDuongTextView"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginLeft="10dp"
+
+        android:text="Bến xe Đà nẵng Tam Kì"
+
+        android:textColor="@color/colorHomeTextView"
+
+        android:textSize="15sp" />
+
+</LinearLayout>

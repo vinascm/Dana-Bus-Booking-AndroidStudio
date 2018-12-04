@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:id="@+id/functionViewLayout"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="@color/colorPrimary"
+
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/topLayout"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:background="@drawable/border_shadow"
+
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:paddingLeft="@dimen/paddingMapText"
+            android:paddingRight="@dimen/paddingMapText"
+
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="@dimen/mapImageViewSize"
+                android:layout_height="@dimen/mapImageViewSize"
+
+                android:src="@drawable/source"/>
+
+            <EditText
+                android:id="@+id/sourcePositionEditText"
+
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+
+                android:layout_weight="1"
+
+                android:textSize="16sp"
+
+                android:layout_marginLeft="@dimen/paddingMapText"
+                android:layout_marginRight="@dimen/paddingMapText"
+
+                android:hint="Nhập điểm đi..."
+
+                android:backgroundTint="@color/colorThemeBackgroundSplashScreen"
+
+                android:textColor="@color/mapLookUpTextColorTextView"
+
+                android:textColorHint="@color/mapLookUpText"
+
+                android:textCursorDrawable="@drawable/text_cursor_drawable_map"/>
+
+            <ImageView
+                android:layout_width="@dimen/mapImageViewSize"
+                android:layout_height="@dimen/mapImageViewSize"
+
+                android:src="@drawable/position"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:paddingLeft="@dimen/paddingMapText"
+            android:paddingRight="@dimen/paddingMapText"
+
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="@dimen/mapImageViewSize"
+                android:layout_height="@dimen/mapImageViewSize"
+
+                android:src="@drawable/destination"/>
+
+            <EditText
+                android:id="@+id/destinationPositionEditText"
+
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+
+                android:layout_weight="1"
+
+                android:textSize="16sp"
+
+                android:layout_marginLeft="@dimen/paddingMapText"
+                android:layout_marginRight="@dimen/paddingMapText"
+
+                android:hint="Nhập điểm đến..."
+
+                android:backgroundTint="@color/colorThemeBackgroundSplashScreen"
+
+                android:textColor="@color/mapLookUpTextColorTextView"
+
+                android:textColorHint="@color/mapLookUpText"
+
+                android:textCursorDrawable="@drawable/text_cursor_drawable_map"/>
+
+            <Button
+                android:id="@+id/getTheRoutesButton"
+
+                android:layout_width="@dimen/mapImageViewSize"
+                android:layout_height="@dimen/mapImageViewSize"
+
+                android:src="@drawable/navigation"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!-- Google map illustrative image view -->
+    <ImageView
+        android:id="@+id/googleMapImageView"
+
+        android:layout_below="@id/topLayout"
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+         android:scaleType="centerCrop"
+
+        android:src="@drawable/googlemap"/>
+
+
+</RelativeLayout>
+

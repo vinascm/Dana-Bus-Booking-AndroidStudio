@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:scrollbars="none"
+
+    android:background="@color/colorBackgroundUserProfile">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+
+        android:paddingLeft="24dp"
+        android:paddingRight="24dp"
+        android:paddingTop="56dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+
+            android:layout_height="72dp"
+            android:layout_gravity="center_horizontal"
+
+            android:layout_marginBottom="24dp"
+
+            android:src="@drawable/logo" />
+
+        <!-- Name Label -->
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginBottom="8dp"
+
+            android:layout_marginTop="8dp"
+
+            android:textColorHint="@color/contentTextViewColor">
+
+            <EditText
+                android:id="@+id/input_name"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:backgroundTint="@color/contentTextViewColor"
+
+                android:hint="Tên người dùng"
+
+                android:inputType="textCapWords"
+
+                android:textColor="@color/contentTextViewColor"
+
+                android:textCursorDrawable="@drawable/text_cursor_drawable" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <!-- Email Label -->
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginBottom="8dp"
+
+            android:layout_marginTop="8dp"
+
+            android:textColorHint="@color/contentTextViewColor">
+
+            <EditText
+                android:id="@+id/input_email"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:backgroundTint="@color/contentTextViewColor"
+
+                android:hint="Địa chỉ email"
+
+                android:inputType="textEmailAddress"
+
+                android:textColor="@color/contentTextViewColor"
+
+                android:textCursorDrawable="@drawable/text_cursor_drawable" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <!-- Email Label -->
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginBottom="8dp"
+
+            android:layout_marginTop="8dp"
+
+            android:textColorHint="@color/contentTextViewColor">
+
+            <EditText
+                android:id="@+id/input_password"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:backgroundTint="@color/contentTextViewColor"
+
+                android:hint="Mật khẩu"
+
+                android:inputType="textPassword"
+
+                android:textColor="@color/contentTextViewColor"
+
+                android:textCursorDrawable="@drawable/text_cursor_drawable" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <!-- Signup Button -->
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/btn_signup"
+
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginBottom="24dp"
+            android:layout_marginTop="24dp"
+
+            android:background="@drawable/button_background_rounded_6"
+
+            android:padding="12dp"
+
+            android:text="Đăng kí"
+
+            android:textColor="@color/contentTextViewColor" />
+
+        <TextView
+            android:id="@+id/link_login"
+
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginBottom="24dp"
+
+            android:gravity="center"
+
+            android:text="Đã có tài khoản? Đăng nhập ngay"
+
+            android:textColor="@color/contentTextViewColor"
+
+            android:textSize="14dip" />
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <Button
+        android:id="@+id/bookFinalChairButton"
+
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+
+        android:background="@drawable/button_background_rounded_5"
+
+        android:padding="15dp"
+
+        android:focusable="true"
+
+        android:text="L1"
+
+        android:textColor="@color/white"
+
+        android:textSize="@dimen/buttonRoundedViewTextSize" />
+
+
+</LinearLayout>

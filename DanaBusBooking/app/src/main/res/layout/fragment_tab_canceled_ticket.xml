@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="@color/colorPrimary">
+
+    <ImageView
+        android:id="@+id/emptyIllustrationImageView"
+
+        android:layout_width="@dimen/emptyIllustrationImageViewSize"
+        android:layout_height="@dimen/emptyIllustrationImageViewSize"
+
+        android:layout_centerInParent="true"
+
+        android:src="@drawable/empty" />
+
+    <LinearLayout
+        android:id="@+id/containerLayout"
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:orientation="vertical">
+
+        <!-- If we don't have any available source, shut this down -->
+        <LinearLayout
+            android:id="@+id/topLayout"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:gravity="center"
+
+            android:orientation="horizontal"
+
+            android:padding="10dp">
+
+            <!-- Search Image View-->
+            <ImageView
+                android:id="@+id/searchImageView"
+
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+
+                android:layout_centerInParent="true"
+
+                android:src="@drawable/lookup" />
+
+            <EditText
+                android:id="@+id/ticketEditText"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_marginLeft="@dimen/paddingMapText"
+
+                android:layout_marginRight="@dimen/paddingMapText"
+
+                android:backgroundTint="@color/colorBackgroundRoundedButtonViewBusLookUp"
+
+                android:hint="Tìm kiếm..."
+
+                android:textColor="@color/mapLookUpTextColorTextView"
+
+                android:textColorHint="@color/mapLookUpText"
+
+                android:textCursorDrawable="@drawable/text_cursor_drawable_map"
+
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/canceledTicketListView"
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:layout_below="@id/topLayout"
+
+            android:background="@drawable/border_shadow_3"
+
+            android:scrollbars="none" />
+
+    </LinearLayout>
+
+</RelativeLayout>

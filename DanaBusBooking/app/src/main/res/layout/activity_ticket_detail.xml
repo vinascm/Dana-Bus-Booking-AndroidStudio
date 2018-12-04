@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:id="@+id/messageExchangeLayout"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:scrollbars="none"
+
+        android:layout_below="@id/topLayout">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:orientation="vertical"
+            android:paddingLeft="20dp"
+
+            android:paddingRight="20dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:orientation="vertical">
+
+                <!-- Ma ve display -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:gravity="center"
+
+                    android:orientation="vertical"
+
+                    android:padding="15dp">
+
+                    <Button
+                        android:layout_width="@dimen/buttonRoundedWidthSizeTicketBooking"
+                        android:layout_height="wrap_content"
+
+                        android:background="@drawable/button_background_rounded_view_ticket_detail"
+
+                        android:padding="15dp"
+
+                        android:text="Mã vé"
+
+                        android:textColor="@color/white"
+
+                        android:textSize="@dimen/buttonRoundedViewTextSizeTicketBooking" />
+
+                    <TextView
+                        android:id="@+id/maVeTextView"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+
+                        android:layout_marginTop="10dp"
+
+                        android:textAlignment="center"
+
+                        android:text="1"
+
+                        android:textColor="@color/colorHomeTextViewTicketBooking"
+
+                        android:textSize="@dimen/textViewDataOnItemTicketDetail" />
+
+                </LinearLayout>
+
+                <!-- Tinh trang display -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:gravity="center"
+
+                    android:orientation="vertical"
+
+                    android:padding="15dp">
+
+                    <Button
+                        android:id="@+id/tinhTrangNgayButton"
+
+                        android:layout_width="@dimen/buttonRoundedWidthSizeTicketBooking"
+                        android:layout_height="wrap_content"
+
+                        android:background="@drawable/button_background_rounded_view_ticket_detail"
+
+                        android:padding="15dp"
+
+                        android:text="Ngày hủy"
+
+                        android:textColor="@color/white"
+
+                        android:textSize="@dimen/buttonRoundedViewTextSizeTicketBooking" />
+
+                    <TextView
+                        android:id="@+id/thongTinNgayTextView"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+
+                        android:layout_marginTop="10dp"
+
+                        android:textAlignment="center"
+
+                        android:text="30.32.2018"
+
+                        android:textColor="@color/colorHomeTextViewTicketBooking"
+
+                        android:textSize="@dimen/textViewDataOnItemTicketDetail" />
+
+                </LinearLayout>
+
+                <!-- Ten tuyen duong display -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:gravity="center"
+
+                    android:orientation="vertical"
+
+                    android:padding="15dp">
+
+                    <Button
+                        android:layout_width="@dimen/buttonRoundedWidthSizeTicketBooking"
+                        android:layout_height="wrap_content"
+
+                        android:background="@drawable/button_background_rounded_view_ticket_detail"
+
+                        android:padding="15dp"
+
+                        android:text="Tên tuyến"
+
+                        android:textColor="@color/white"
+
+                        android:textSize="@dimen/buttonRoundedViewTextSizeTicketBooking" />
+
+                    <TextView
+                        android:id="@+id/tenTuyenTextView"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+
+                        android:layout_marginTop="10dp"
+
+                        android:textAlignment="center"
+
+                        android:text="Da nag - Hoi an"
+
+                        android:textColor="@color/colorHomeTextViewTicketBooking"
+
+                        android:textSize="@dimen/textViewDataOnItemTicketDetail" />
+
+                </LinearLayout>
+
+                <!-- Ghe ngoi display -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:gravity="center"
+
+                    android:orientation="vertical"
+
+                    android:padding="15dp">
+
+                    <Button
+                        android:layout_width="@dimen/buttonRoundedWidthSizeTicketBooking"
+                        android:layout_height="wrap_content"
+
+                        android:background="@drawable/button_background_rounded_view_ticket_detail"
+
+                        android:padding="15dp"
+
+                        android:text="Ghế ngồi"
+
+                        android:textColor="@color/white"
+
+                        android:textSize="@dimen/buttonRoundedViewTextSizeTicketBooking" />
+
+                    <TextView
+                        android:id="@+id/gheNgoiTextView"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+
+                        android:layout_marginTop="10dp"
+
+                        android:textAlignment="center"
+
+                        android:text="L2 - Vị trí thứ 2 từ dưới lên thuộc Xe hiệu KG-2 biến sổ G32-232 L2 - Vị trí thứ 2 từ dưới lên thuộc Xe hiệu KG-2 biến sổ G32-232"
+
+                        android:textColor="@color/colorHomeTextViewTicketBooking"
+
+                        android:textSize="@dimen/textViewDataOnItemTicketDetail" />
+
+                </LinearLayout>
+
+                <!-- Gia tien display -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:gravity="center"
+
+                    android:orientation="vertical"
+
+                    android:padding="15dp">
+
+                    <Button
+                        android:layout_width="@dimen/buttonRoundedWidthSizeTicketBooking"
+                        android:layout_height="wrap_content"
+
+                        android:background="@drawable/button_background_rounded_view_ticket_detail"
+
+                        android:padding="15dp"
+
+                        android:text="Giá tiền"
+
+                        android:textColor="@color/white"
+
+                        android:textSize="@dimen/buttonRoundedViewTextSizeTicketBooking" />
+
+                    <TextView
+                        android:id="@+id/giaTienTextView"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+
+                        android:layout_marginTop="10dp"
+
+                        android:textAlignment="center"
+
+                        android:text="10000"
+
+                        android:textColor="@color/colorHomeTextViewTicketBooking"
+
+                        android:textSize="@dimen/textViewDataOnItemTicketDetail" />
+
+                </LinearLayout>
+
+
+                <!-- Ngay san xuat display -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:gravity="center"
+
+                    android:orientation="vertical"
+
+                    android:padding="15dp">
+
+                    <Button
+                        android:layout_width="@dimen/buttonRoundedWidthSizeTicketBooking"
+                        android:layout_height="wrap_content"
+
+                        android:background="@drawable/button_background_rounded_view_ticket_detail"
+
+                        android:padding="15dp"
+
+                        android:text="Ngày sản xuất"
+
+                        android:textColor="@color/white"
+
+                        android:textSize="@dimen/buttonRoundedViewTextSizeTicketBooking" />
+
+                    <TextView
+                        android:id="@+id/ngaySanXuatTextView"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+
+                        android:layout_marginTop="10dp"
+
+                        android:textAlignment="center"
+
+                        android:text="20.03.1208"
+
+                        android:textColor="@color/colorHomeTextViewTicketBooking"
+
+                        android:textSize="@dimen/textViewDataOnItemTicketDetail" />
+
+                </LinearLayout>
+
+                <!-- Ngay het han display -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:gravity="center"
+
+                    android:orientation="vertical"
+
+                    android:padding="15dp">
+
+                    <Button
+                        android:layout_width="@dimen/buttonRoundedWidthSizeTicketBooking"
+                        android:layout_height="wrap_content"
+
+                        android:background="@drawable/button_background_rounded_view_ticket_detail"
+
+                        android:padding="15dp"
+
+                        android:text="Ngày hết hạn"
+
+                        android:textColor="@color/white"
+
+                        android:textSize="@dimen/buttonRoundedViewTextSizeTicketBooking" />
+
+                    <TextView
+                        android:id="@+id/ngayHetHanTextView"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+
+                        android:layout_marginTop="10dp"
+
+                        android:textAlignment="center"
+
+                        android:text="30.12.2018"
+
+                        android:textColor="@color/colorHomeTextViewTicketBooking"
+
+                        android:textSize="@dimen/textViewDataOnItemTicketDetail" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

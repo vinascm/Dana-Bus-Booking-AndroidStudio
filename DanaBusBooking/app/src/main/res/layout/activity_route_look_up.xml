@@ -1,0 +1,473 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:background="@color/colorPrimary"
+
+    android:orientation="vertical">
+
+    <!-- Google map illustrative image view -->
+    <ImageView
+        android:id="@+id/googleMapImageView"
+
+        android:layout_width="match_parent"
+
+        android:layout_height="200dp"
+        android:layout_above="@id/topLayout"
+
+        android:scaleType="centerCrop"
+
+        android:src="@drawable/google_map2" />
+
+
+    <ScrollView
+        android:id="@+id/topLayout"
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:layout_below="@+id/centerLayout"
+
+            android:background="@color/white"
+
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:background="@drawable/border_shadow_5"
+
+                android:orientation="horizontal"
+
+                android:paddingBottom="20dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="20dp">
+
+                <ImageView
+                    android:layout_width="@dimen/mapImageViewSize"
+                    android:layout_height="@dimen/mapImageViewSize"
+
+                    android:src="@drawable/booked" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginLeft="10dp"
+
+                    android:text="Mã tuyến:"
+
+                    android:textColor="@color/colorUserInformationTextView"
+
+                    android:textSize="@dimen/informationDetailShapeTextSize" />
+
+                <TextView
+                    android:id="@+id/maTuyenDuongTextView"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginLeft="10dp"
+
+                    android:text="2"
+
+                    android:textColor="@color/colorUserInformationTextView"
+
+                    android:textSize="@dimen/informationDetailnforTextSize" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:background="@drawable/border_shadow_5"
+
+                android:orientation="horizontal"
+
+                android:paddingBottom="20dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="20dp">
+
+                <ImageView
+                    android:layout_width="@dimen/mapImageViewSize"
+                    android:layout_height="@dimen/mapImageViewSize"
+
+                    android:src="@drawable/booked" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginLeft="10dp"
+
+                    android:text="Tên tuyến:"
+
+                    android:textColor="@color/colorUserInformationTextView"
+
+                    android:textSize="@dimen/informationDetailShapeTextSize" />
+
+                <TextView
+                    android:id="@+id/tenTuyenDuongTextView"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginLeft="10dp"
+
+                    android:text="Bến xe Đà nẵng Tam Kì"
+
+                    android:textColor="@color/colorUserInformationTextView"
+
+                    android:textSize="@dimen/informationDetailnforTextSize" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:background="@drawable/border_shadow_5"
+
+                android:orientation="horizontal"
+
+                android:paddingBottom="20dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="20dp">
+
+                <ImageView
+                    android:layout_width="@dimen/mapImageViewSize"
+                    android:layout_height="@dimen/mapImageViewSize"
+
+                    android:src="@drawable/booked" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginLeft="10dp"
+
+                    android:text="Khoảng cách vật lý:"
+
+                    android:textColor="@color/colorUserInformationTextView"
+
+                    android:textSize="@dimen/informationDetailShapeTextSize" />
+
+                <TextView
+                    android:id="@+id/khoangCachVatLyTextView"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginLeft="10dp"
+
+                    android:text="20 km"
+
+                    android:textColor="@color/colorUserInformationTextView"
+
+                    android:textSize="@dimen/informationDetailnforTextSize" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:background="@drawable/border_shadow_5"
+
+                android:orientation="horizontal"
+
+                android:paddingBottom="20dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="20dp">
+
+                <ImageView
+                    android:layout_width="@dimen/mapImageViewSize"
+                    android:layout_height="@dimen/mapImageViewSize"
+
+                    android:src="@drawable/booked" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginLeft="10dp"
+
+                    android:text="Bến đi:"
+
+                    android:textColor="@color/colorUserInformationTextView"
+
+                    android:textSize="@dimen/informationDetailShapeTextSize" />
+
+                <TextView
+                    android:id="@+id/benDiTextView"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginLeft="10dp"
+
+                    android:text="Da nang Tho Quang"
+
+                    android:textColor="@color/colorUserInformationTextView"
+
+                    android:textSize="@dimen/informationDetailnforTextSize" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:background="@drawable/border_shadow_5"
+
+                android:orientation="horizontal"
+
+                android:paddingBottom="20dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="20dp">
+
+                <ImageView
+                    android:layout_width="@dimen/mapImageViewSize"
+                    android:layout_height="@dimen/mapImageViewSize"
+
+                    android:src="@drawable/booked" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginLeft="10dp"
+
+                    android:text="Bến đỗ:"
+
+                    android:textColor="@color/colorUserInformationTextView"
+
+                    android:textSize="@dimen/informationDetailShapeTextSize" />
+
+                <TextView
+                    android:id="@+id/benDoTextView"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginLeft="10dp"
+
+                    android:text="Da nang Ngọc Đại"
+
+                    android:textColor="@color/colorUserInformationTextView"
+
+                    android:textSize="@dimen/informationDetailnforTextSize" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:background="@drawable/border_shadow_5"
+
+                android:orientation="horizontal"
+
+                android:paddingBottom="20dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="20dp">
+
+                <ImageView
+                    android:layout_width="@dimen/mapImageViewSize"
+                    android:layout_height="@dimen/mapImageViewSize"
+
+                    android:src="@drawable/booked" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginLeft="10dp"
+
+                    android:text="Tần suất:"
+
+                    android:textColor="@color/colorUserInformationTextView"
+
+                    android:textSize="@dimen/informationDetailShapeTextSize" />
+
+                <TextView
+                    android:id="@+id/tanSuatTextView"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginLeft="10dp"
+
+                    android:text="20 phút 1 chuyến"
+
+                    android:textColor="@color/colorUserInformationTextView"
+
+                    android:textSize="@dimen/informationDetailnforTextSize" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:background="@drawable/border_shadow_5"
+
+                android:orientation="horizontal"
+
+                android:paddingBottom="20dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="20dp">
+
+                <ImageView
+                    android:layout_width="@dimen/mapImageViewSize"
+                    android:layout_height="@dimen/mapImageViewSize"
+
+                    android:src="@drawable/booked" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginLeft="10dp"
+
+                    android:text="Giá vé:"
+
+                    android:textColor="@color/colorUserInformationTextView"
+
+                    android:textSize="@dimen/informationDetailShapeTextSize" />
+
+                <TextView
+                    android:id="@+id/giaVeTextView"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginLeft="10dp"
+
+                    android:text="5000 vnd"
+
+                    android:textColor="@color/colorUserInformationTextView"
+
+                    android:textSize="@dimen/informationDetailnforTextSize" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:background="@drawable/border_shadow_5"
+
+                android:orientation="horizontal"
+
+                android:paddingBottom="20dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="20dp">
+
+                <ImageView
+                    android:layout_width="@dimen/mapImageViewSize"
+                    android:layout_height="@dimen/mapImageViewSize"
+
+                    android:src="@drawable/booked" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginLeft="10dp"
+
+                    android:text="Giờ mở bến:"
+
+                    android:textColor="@color/colorUserInformationTextView"
+
+                    android:textSize="@dimen/informationDetailShapeTextSize" />
+
+                <TextView
+                    android:id="@+id/gioMoBenTextView"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginLeft="10dp"
+
+                    android:text="5:30"
+
+                    android:textColor="@color/colorUserInformationTextView"
+
+                    android:textSize="@dimen/informationDetailnforTextSize" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:background="@drawable/border_shadow_5"
+
+                android:orientation="horizontal"
+
+                android:paddingBottom="20dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="20dp">
+
+                <ImageView
+                    android:layout_width="@dimen/mapImageViewSize"
+                    android:layout_height="@dimen/mapImageViewSize"
+
+                    android:src="@drawable/booked" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginLeft="10dp"
+
+                    android:text="Giờ đóng bến:"
+
+                    android:textColor="@color/colorUserInformationTextView"
+
+                    android:textSize="@dimen/informationDetailShapeTextSize" />
+
+                <TextView
+                    android:id="@+id/gioDongBenTextView"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginLeft="10dp"
+
+                    android:text="21:30"
+
+                    android:textColor="@color/colorUserInformationTextView"
+
+                    android:textSize="@dimen/informationDetailnforTextSize" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
+
+
